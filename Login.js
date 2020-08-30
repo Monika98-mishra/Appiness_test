@@ -31,7 +31,7 @@ class Login extends Component {
                     window.location.href="#/Dashboard";
                     // document.getElementsByClassName("login").style.display="none";
                     //location.replace="/company";
-                    window.location.reload(); // to reload the current page
+                   // window.location.reload(); // to reload the current page
                 }
                 else{
                     window.location.href="../";
