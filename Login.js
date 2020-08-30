@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-// import {  BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
-// import Dashboard from './Dashboard';
-// import { hashHistory } from 'react-router';
-
 class Login extends Component {
     constructor() {
         super();
@@ -19,27 +15,20 @@ class Login extends Component {
     save = (event) => {
         event.preventDefault();
         if((this.state. fileds["uname"] =="hruday@gmail.com") && (this.state. fileds["password"] =="hruday123")){
-            if(this.state. fileds["uname"] && this.state. fileds["password"]){
+                sessionStorage.setItem("uname","hruday@gmail.com")
+            
                 this.setState({
                     msg:"Login Success! Redirecting...",
-                   // url:"/#/"
+                  
                   
                    
                 })
                 
-                if(this.state. fileds["uname"] && this.state. fileds["password"]){
+                
                     window.location.href="#/Dashboard";
-                    // document.getElementsByClassName("login").style.display="none";
-                    //location.replace="/company";
-                   // window.location.reload(); // to reload the current page
-                }
-                else{
-                    window.location.href="../";
-                    //location.replace="/company";
+                   
                     window.location.reload(); // to reload the current page
-                }
                
-            }
             
         }
         else{
